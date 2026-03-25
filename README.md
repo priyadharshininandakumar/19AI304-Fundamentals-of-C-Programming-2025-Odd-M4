@@ -137,38 +137,26 @@ Thus, the program was implemented and executed successfully, and the required ou
 # Program:
 ```
 #include <stdio.h>
-
-// Function to find maximum
 int max(int a, int b) {
     if (a > b)
         return a;
     else
         return b;
 }
-
-// Function to find minimum
 int min(int a, int b) {
     if (a < b)
         return a;
     else
         return b;
 }
-
 int main() {
     int num1, num2, maximum, minimum;
-
-    // Input two numbers
     printf("Enter two numbers: ");
     scanf("%d %d", &num1, &num2);
-
-    // Function calls
     maximum = max(num1, num2);
     minimum = min(num1, num2);
-
-    // Display results
     printf("Maximum value: %d\n", maximum);
     printf("Minimum value: %d\n", minimum);
-
     return 0;
 }
 ```
